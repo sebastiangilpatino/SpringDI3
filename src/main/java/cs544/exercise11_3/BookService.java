@@ -9,23 +9,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class BookService implements IBookService {
 
+	@Autowired
 	public List<IBookSupplier> suppliers = new ArrayList<IBookSupplier>();
-
-	@Autowired
-	@Qualifier("ebooks")
-	IBookSupplier ebook;
-
-	@Autowired
-	@Qualifier("barnesAndNoble")
-	IBookSupplier barnesAndNoble;
-
-	@Autowired
-	@Qualifier("amazon")
-	IBookSupplier amazon;
-
-	@Autowired
-	@Qualifier("borders")
-	IBookSupplier borders;
 
 	@Override
 	public void addSupplier(IBookSupplier supplier) {

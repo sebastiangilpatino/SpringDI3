@@ -2,7 +2,7 @@ package cs544.exercise11_3;
 
 import org.springframework.stereotype.Component;
 
-@Component("barnesAndNoble")
+@Component
 public class BarnesAndNoble implements IBookSupplier {
 
 	public double computePrice(String isbn) {

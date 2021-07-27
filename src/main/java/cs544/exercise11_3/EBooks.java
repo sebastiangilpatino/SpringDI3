@@ -2,7 +2,7 @@ package cs544.exercise11_3;
 
 import org.springframework.stereotype.Component;
 
-@Component("ebooks")
+@Component
 public class EBooks implements IBookSupplier {
 	public double computePrice(String isbn) {
 		double price = Math.random() * 45;

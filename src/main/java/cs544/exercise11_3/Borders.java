@@ -2,7 +2,7 @@ package cs544.exercise11_3;
 
 import org.springframework.stereotype.Component;
 
-@Component("borders")
+@Component
 public class Borders implements IBookSupplier {
 
 	@Override
