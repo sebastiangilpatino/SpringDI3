@@ -10,10 +10,10 @@ public class App {
 
 		IBookService bookService = context.getBean("bookService", IBookService.class);
 
-		bookService.addSupplier(new Amazon());
-		bookService.addSupplier(new EBooks());
-		bookService.addSupplier(new BarnesAndNoble());
-		bookService.addSupplier(new Borders());
+//		bookService.addSupplier(new Amazon());
+//		bookService.addSupplier(new EBooks());
+//		bookService.addSupplier(new BarnesAndNoble());
+//		bookService.addSupplier(new Borders());
 
 		bookService.buy(new Book("123433267", "Harry Potter and the Order of the Phoenix", "J.K. Rowling"));
 		bookService.buy(new Book("888832678", "Harry Potter and the Sorcerer's Stone", "J.K. Rowling"));

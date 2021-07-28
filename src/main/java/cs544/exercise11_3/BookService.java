@@ -13,11 +13,6 @@ public class BookService implements IBookService {
 	public List<IBookSupplier> suppliers = new ArrayList<IBookSupplier>();
 
 	@Override
-	public void addSupplier(IBookSupplier supplier) {
-		suppliers.add(supplier);
-	}
-
-	@Override
 	public void buy(Book book) {
 		double lowestPrice = 0;
 		IBookSupplier cheapestSupplier = null;
